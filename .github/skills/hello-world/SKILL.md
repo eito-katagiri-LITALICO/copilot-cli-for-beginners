@@ -1,20 +1,20 @@
 ---
 name: hello-world
-description: A minimal skill example - use when learning the skill format
+description: 最小構成の skill サンプルです - skill のフォーマットを学ぶ際に使用します
 ---
 
 # Hello World Skill
 
-This is the simplest possible skill. It demonstrates the required format.
+これは最もシンプルな skill です。必要なフォーマットを示しています。
 
-## When This Skill Activates
+## この Skill が有効になるタイミング
 
-This skill loads when you mention "hello world skill" or "test my skills setup".
+「hello world skill」または「test my skills setup」と言及したときに、この skill が読み込まれます。
 
-## What It Does
+## 動作内容
 
-Responds with a friendly confirmation that skills are working.
+skill が正常に動作していることを知らせる、フレンドリーな確認メッセージを返します。
 
-## Try It
+## 試してみましょう
 
-Ask Copilot: "Test my skills setup" or "Use the hello world skill"
+Copilot に「Test my skills setup」または「Use the hello world skill」と聞いてみてください。

@@ -1,49 +1,49 @@
 ---
 name: code-checklist
-description: Team code quality checklist - use for checking Python code quality, bugs, security issues, and best practices
+description: チームのコード品質チェックリスト - Python コードの品質、バグ、セキュリティ問題、ベストプラクティスの確認に使用します
 ---
 
 # Code Checklist Skill
 
-Apply this checklist when checking Python code.
+Python コードを確認する際に、このチェックリストを適用してください。
 
-## Code Quality Checklist
+## コード品質チェックリスト
 
-- [ ] All functions have type hints
-- [ ] No bare except clauses
-- [ ] No mutable default arguments
-- [ ] Context managers used for file I/O
-- [ ] Functions are under 50 lines
-- [ ] Variable and function names follow PEP 8 (snake_case)
+- [ ] すべての関数に型ヒントが付いている
+- [ ] 裸の except 句がない
+- [ ] ミュータブルなデフォルト引数がない
+- [ ] ファイル I/O にコンテキストマネージャーを使用している
+- [ ] 関数が 50 行以内に収まっている
+- [ ] 変数名・関数名が PEP 8（snake_case）に従っている
 
-## Input Validation Checklist
+## 入力バリデーションチェックリスト
 
-- [ ] User input is validated before processing
-- [ ] Edge cases handled (empty strings, None, out-of-range values)
-- [ ] Error messages are clear and helpful
+- [ ] ユーザー入力が処理前に検証されている
+- [ ] エッジケースが処理されている（空文字列、None、範囲外の値）
+- [ ] エラーメッセージが明確でわかりやすい
 
-## Testing Checklist
+## テストチェックリスト
 
-- [ ] New code has corresponding pytest tests
-- [ ] Edge cases are covered
-- [ ] Tests use descriptive names
+- [ ] 新しいコードに対応する pytest テストがある
+- [ ] エッジケースがカバーされている
+- [ ] テストに説明的な名前が付いている
 
-## Output Format
+## 出力フォーマット
 
-Present findings as:
+結果を以下の形式で提示してください：
 
 ```
 ## Code Checklist: [filename]
 
 ### Code Quality
-- [PASS/FAIL] Description of finding
+- [PASS/FAIL] 確認内容の説明
 
 ### Input Validation
-- [PASS/FAIL] Description of finding
+- [PASS/FAIL] 確認内容の説明
 
 ### Testing
-- [PASS/FAIL] Description of finding
+- [PASS/FAIL] 確認内容の説明
 
 ### Summary
-[X] items need attention before merge
+[X] 件のアイテムがマージ前に対応が必要です
 ```

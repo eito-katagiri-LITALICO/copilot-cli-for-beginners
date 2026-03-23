@@ -1,13 +1,13 @@
 ---
 name: commit-message
-description: Generate conventional commit messages - use when creating commits, writing commit messages, or asking for git commit help
+description: 規約に沿ったコミットメッセージを生成します - コミット作成、コミットメッセージの記述、または git コミットのサポートが必要な際に使用します
 ---
 
 # Commit Message Skill
 
-Generate commit messages following the Conventional Commits specification.
+Conventional Commits の仕様に従ったコミットメッセージを生成します。
 
-## Format
+## フォーマット
 
 ```
 <type>(<scope>): <description>
@@ -17,35 +17,35 @@ Generate commit messages following the Conventional Commits specification.
 [optional footer]
 ```
 
-## Types
+## タイプ一覧
 
-| Type | When to Use |
+| タイプ | 使用タイミング |
 |------|-------------|
-| `feat` | New feature |
-| `fix` | Bug fix |
-| `docs` | Documentation only |
-| `style` | Formatting (no code change) |
-| `refactor` | Code change that neither fixes nor adds |
-| `perf` | Performance improvement |
-| `test` | Adding or updating tests |
-| `chore` | Maintenance tasks |
+| `feat` | 新機能の追加 |
+| `fix` | バグの修正 |
+| `docs` | ドキュメントのみの変更 |
+| `style` | フォーマットの変更（コードの動作に影響しない） |
+| `refactor` | バグ修正でも機能追加でもないコードの変更 |
+| `perf` | パフォーマンスの改善 |
+| `test` | テストの追加または更新 |
+| `chore` | メンテナンス作業 |
 
-## Rules
+## ルール
 
-1. Subject line maximum 72 characters
-2. Use imperative mood ("add" not "added" or "adds")
-3. No period at the end of subject line
-4. Separate subject from body with blank line
-5. Body explains **what** and **why**, not how
+1. サブジェクト行は最大 72 文字以内にする
+2. 命令形を使う（"added" や "adds" ではなく "add"）
+3. サブジェクト行の末尾にピリオドを付けない
+4. サブジェクトと本文の間に空行を挿入する
+5. 本文では **何を** そして **なぜ** を説明し、方法は書かない
 
-## Examples
+## 例
 
-Simple:
+シンプルな例：
 ```
 fix(auth): prevent redirect loop on expired sessions
 ```
 
-With body:
+本文付きの例：
 ```
 feat(api): add rate limiting to public endpoints
 
